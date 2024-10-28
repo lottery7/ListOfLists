@@ -31,16 +31,13 @@ public class CreateList extends AppCompatActivity {
         setContentView(binding.getRoot());
         getWindow().setStatusBarColor(Color.TRANSPARENT);
 
-        // Инициализация списка и адаптера
         itemList = new ArrayList<>();
         itemAdaptor = new ItemAdaptor(itemList);
 
-        // Настройка RecyclerView
         RecyclerView recyclerView = findViewById(R.id.recyclerView);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         recyclerView.setAdapter(itemAdaptor);
 
-        // Обработчик кнопки для добавления нового элемента
         binding.button3.setOnClickListener(v -> {
             AlertDialog.Builder builder = new AlertDialog.Builder(this);
             builder.setTitle("Add item");
