@@ -24,6 +24,11 @@ jobs:
       run: chmod +x gradlew
     - name: Build with Gradle
       run: ./gradlew build
+    - name: Start Android Emulator
+      run: |
+        echo "no" | sdkmanager --install "system-images;android-29;google_apis;x86"
+        emulator -avd test -no-snapshot-load -no-accel &
+        android-wait-for-emulator
     - name: Run Unit Tests
       run: ./gradlew test
     - name: Run Android Instrumented Tests
