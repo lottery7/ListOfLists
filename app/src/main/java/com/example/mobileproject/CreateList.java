@@ -17,6 +17,7 @@ import java.util.ArrayList;
 
 public class CreateList extends AppCompatActivity {
 
+    String uid = null;
     private String newItem;
     private ArrayList<String> itemList; // список элементов
     private ItemAdaptor itemAdaptor; // адаптер
@@ -58,5 +59,7 @@ public class CreateList extends AppCompatActivity {
             builder.setNegativeButton("Cancel", (dialog, which) -> dialog.cancel());
             builder.show();
         });
+
+        uid = getIntent().getStringExtra("list_uid");
     }
 }
