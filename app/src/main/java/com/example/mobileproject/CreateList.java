@@ -8,7 +8,11 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
+import com.example.mobileproject.databinding.ActivityCreateListBinding;
+
 public class CreateList extends AppCompatActivity {
+
+    private ActivityCreateListBinding binding;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

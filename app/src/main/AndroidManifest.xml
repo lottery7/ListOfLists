@@ -13,10 +13,13 @@
         android:theme="@style/Theme.MobileProject"
         tools:targetApi="31">
         <activity
-            android:name=".RestorePassword"
+            android:name=".MainPage"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".CreateList"
+            android:exported="false" />
+        <activity
+            android:name=".RestorePassword"
             android:exported="false" />
         <activity
             android:name=".SignUp"

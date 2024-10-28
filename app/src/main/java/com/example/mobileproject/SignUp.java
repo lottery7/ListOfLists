@@ -83,6 +83,6 @@ public class SignUp extends AppCompatActivity {
     }
 
     private void goToMainMap() {
-        startActivity(new Intent(SignUp.this, MainActivity.class));
+        startActivity(new Intent(SignUp.this, MainPage.class));
     }
 }
