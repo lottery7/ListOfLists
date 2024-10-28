@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:id="@+id/main"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="@color/background_light_gray"
+tools:context=".SignIn">
+
+<TextView
+    android:id="@+id/sign_in_ttl"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="200dp"
+    android:fontFamily="@font/roboto_bold"
+    android:text="@string/sign_in_ttl"
+    android:textColor="@color/text_heading_dark_gray"
+    android:textSize="48sp"
+
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent" />
+
+<LinearLayout
+    android:id="@+id/user_lin"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="30dp"
+    android:orientation="horizontal"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/sign_in_ttl">
+
+
+    <!--            android:src="@drawable/user_icon"-->
+    <ImageView
+        android:id="@+id/user_ico"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
+        android:contentDescription="@string/icon_description"
+        android:src="@drawable/message_icon"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/user_et"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:autofillHints="emailAddress"
+        android:backgroundTint="@color/text_dark_charcoal"
+        android:colorControlNormal="@color/text_dark_charcoal"
+        android:fontFamily="@font/roboto"
+        android:hint="@string/user_et_hint"
+        android:inputType="textNoSuggestions"
+        android:minHeight="48dp"
+        android:singleLine="true"
+        android:textColor="@color/text_dark_charcoal"
+        android:textColorHint="@color/text_dark_charcoal"
+        android:textCursorDrawable="@drawable/cursor_color"
+        app:layout_constraintEnd_toEndOf="parent" />
+</LinearLayout>
+
+<LinearLayout
+    android:id="@+id/password_lin"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="20dp"
+    android:orientation="horizontal"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/user_lin">
+
+    <ImageView
+        android:id="@+id/password_ico"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
+        android:contentDescription="@string/icon_description"
+        android:src="@drawable/password_icon"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/password_et"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:autofillHints="password"
+        android:backgroundTint="@color/black"
+        android:colorControlNormal="@color/text_dark_charcoal"
+        android:fontFamily="@font/roboto"
+        android:hint="@string/password_et_hint"
+        android:inputType="textPassword"
+        android:minHeight="48dp"
+        android:singleLine="true"
+        android:textColor="@color/text_dark_charcoal"
+        android:textColorHint="@color/text_dark_charcoal"
+        android:textCursorDrawable="@drawable/cursor_color"
+        app:layout_constraintEnd_toEndOf="parent" />
+</LinearLayout>
+
+<LinearLayout
+    android:id="@+id/forgot_password_lin"
+    android:layout_width="280dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/password_lin">
+
+    <TextView
+        android:id="@+id/forgot_password_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto"
+        android:gravity="end"
+        android:text="@string/forgot_password_tv"
+        android:textColor="@color/text_dark_charcoal"
+        android:textSize="16sp"
+        android:backgroundTint="@color/text_dark_charcoal" />
+
+</LinearLayout>
+
+<LinearLayout
+    android:id="@+id/forgot_password_lin2"
+    android:layout_width="280dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/forgot_password_lin">
+
+    <View
+        android:layout_width="128dp"
+        android:layout_height="0.8dp"
+        android:layout_gravity="end"
+        android:background="@color/text_dark_charcoal" />
+
+</LinearLayout>
+
+<Button
+    android:id="@+id/sign_in_btn"
+    android:layout_width="290dp"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="20dp"
+    android:backgroundTint="@color/button_primary_pink"
+    android:fontFamily="@font/roboto_bold"
+    android:text="@string/sign_in_btn"
+    android:textColor="@color/white"
+    android:textSize="22sp"
+    android:elevation="8dp"
+    android:translationZ="4dp"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/forgot_password_lin" />
+
+
+<LinearLayout
+    android:id="@+id/go_to_sing_up_lin"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:orientation="horizontal"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/sign_in_btn">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:fontFamily="@font/roboto"
+        android:text="@string/go_to_sing_up_tv"
+        android:textColor="@color/text_dark_charcoal"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/google_btn" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/go_to_sing_up_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="9dp"
+            android:fontFamily="@font/roboto_bold"
+            android:text="@string/sign_up_ttl"
+            android:textColor="@color/accent_yellow"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="54dp"
+            android:layout_height="0.8dp"
+            android:layout_below="@id/go_to_sing_up_tv"
+            android:layout_marginStart="9dp"
+            android:background="@color/accent_yellow" />
+
+    </RelativeLayout>
+
+</LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

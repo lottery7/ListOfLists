@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "558490906569",
+    "project_id": "xpexam-8cd29",
+    "storage_bucket": "xpexam-8cd29.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:558490906569:android:1e3c326c1c7e4a2966c218",
+        "android_client_info": {
+          "package_name": "com.example.mobileproject"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBQ9Y9LOSm3PPh-XXC_M0lRge1atiN3xBg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
