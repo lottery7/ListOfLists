@@ -7,10 +7,37 @@
     android:layout_height="match_parent"
     tools:context=".CreateList">
 
-    <CalendarView
-        android:id="@+id/calendarView"
+    <TextView
+        android:id="@+id/create_list_ttl"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="88dp"
+        android:fontFamily="@font/roboto_bold"
+        android:text="@string/list_ttl"
+        android:textColor="@color/text_heading_dark_gray"
+        android:textSize="48sp"
+
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="409dp"
+        android:layout_height="465dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/create_list_ttl"
+        app:layout_constraintVertical_bias="0.219"
+        tools:layout_editor_absoluteX="1dp" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Add"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/recyclerView" />
 </androidx.constraintlayout.widget.ConstraintLayout>
+
